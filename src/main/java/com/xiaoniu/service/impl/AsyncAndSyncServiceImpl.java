@@ -16,6 +16,11 @@ import java.util.concurrent.TimeUnit;
 public class AsyncAndSyncServiceImpl implements AsyncAndSyncService {
 
 
+    public AsyncAndSyncServiceImpl(){
+        System.out.println("构造方法");
+    }
+
+
     @Async
     @Override
     public void asyncMethod(){

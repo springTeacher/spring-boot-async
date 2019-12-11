@@ -29,7 +29,7 @@ public class AsyncAndSyncController {
     @GetMapping("async")
     public void testAsync() {
         long start = System.currentTimeMillis();
-        System.err.println("异步方法开始");
+        System.err.println("异步方法开始"+Thread.currentThread().getName());
 
         asyncAndSyncService.asyncMethod();
 
