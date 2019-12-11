@@ -1,5 +1,6 @@
-package com.xiaoniu.service;
+package com.xiaoniu.service.impl;
 
+import com.xiaoniu.service.AsyncAndSyncService;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.scheduling.annotation.AsyncResult;
 import org.springframework.stereotype.Service;
@@ -12,7 +13,7 @@ import java.util.concurrent.TimeUnit;
  * @date 2019/12/11 11:57
  */
 @Service
-public class AsyncAndSyncServiceImpl implements AsyncAndSyncService{
+public class AsyncAndSyncServiceImpl implements AsyncAndSyncService {
 
 
     @Async
