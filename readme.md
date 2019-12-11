@@ -11,3 +11,14 @@ AsyncAnnotationBeanPostProcessor 后置处理器处理
 
 
 
+```
+拦截器和过滤器：
+
+执行顺序：过滤器-->拦截器-->controllerAdvice-->AOP-->controller
+
+
+
+```
+
+
+
