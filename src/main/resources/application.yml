@@ -2,3 +2,28 @@ spring:
   aop:
     auto: true
     proxy-target-class: false
+  application:
+    admin:
+      enabled: true
+    name: spring-boot-async
+
+
+eureka:
+  instance:
+    #Eureka Client向Eureka Server发送心跳的时间间隔,默认30s
+    lease-renewal-interval-in-seconds: 10
+    #指定Eureka Client间隔多久要向Eureka Server发送心跳来告知Eureka Server该实例还存活,默认90s
+    lease-expiration-duration-in-seconds: 30
+    prefer-ip-address: true
+    instance-id: xiaoniu-commons-user
+
+  client:
+    service-url:
+      #eureka client不需要添加security依赖，注册地址加上用户名，密码就行了
+      defaultZone: http://root:root@127.0.0.1:9214/eureka/
+    #多久从eureka server上拉取一次服务，默认30s
+    registry-fetch-interval-seconds: 3
+
+
+server:
+  port: 9216

@@ -2,6 +2,7 @@ package com.xiaoniu;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.scheduling.annotation.EnableAsync;
 
 /**
@@ -11,6 +12,7 @@ import org.springframework.scheduling.annotation.EnableAsync;
  * @date 2019/12/11 11:32
  */
 @EnableAsync
+@EnableEurekaClient
 @SpringBootApplication
 public class Application {
 
